@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProPrepoda_Parser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProPrepoda_Parser"
+        mc:Ignorable="d"
+		WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="600" Width="1200">
+	<Grid>
+		<ListBox Name="cities" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Left" Width="200" />
+		<ListBox Name="schools" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="200,0,0,0" HorizontalAlignment="Left" Width="300" />
+		<ListBox Name="prepods" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Right" Width="200" />
+		<Label Name="prepod" Margin="505,5,205,0" Padding="0" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="30" />
+	</Grid>
+</Window>
